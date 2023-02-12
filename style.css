@@ -1,0 +1,96 @@
+body {
+  font-family: "Lobster", cursive;
+}
+
+.btns {
+  /* border: 2px solid black; */
+  width: 50vw;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #dbe1e2;
+  z-index: -1;
+}
+
+.btns a {
+  text-decoration: none;
+  line-height: 60px;
+  color: black;
+}
+
+.btn {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  text-decoration: none;
+}
+
+.btn1 {
+  border-left: 5px solid #5366c3;
+}
+
+.btn2 {
+  border-left: 5px solid #3f83c0;
+}
+
+.btn3 {
+  border-left: 5px solid #2aa1bd;
+}
+
+.btn4 {
+  border-left: 5px solid #15bfbb;
+}
+
+.btn:hover:before {
+  width: 100%;
+}
+
+.btn1:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #5366c3;
+  transition: all 1s;
+  z-index: -1;
+}
+
+
+.btn2:before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #3f83c0;
+  transition: all 1s;
+  z-index: -1;
+}
+
+.btn3:before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #2aa1bd;
+  transition: all 1s;
+  z-index: -1;
+}
+
+.btn4:before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #15bfbb;
+  transition: all 1s;
+  z-index: -1;
+}
